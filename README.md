@@ -11,7 +11,7 @@ Please refer to the [parallax.js GitHub page](https://github.com/wagerfield/para
 ## So what's different?
 
 1. Use ParallaxScene component to wrap the elements you want in your parallax scene.
-2. Configurations should be passed as props to the ParallaxScene component, rather than 'data-' attributes.
+2. [Configuration options](https://github.com/wagerfield/parallax#22-configuration-options) should be passed as props to the ParallaxScene component, rather than 'data-' attributes.
 3. Child configurations should still be passed as 'data-' attributes! They remain unchanged.
 
 ## Example
