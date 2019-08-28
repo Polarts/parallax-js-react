@@ -1,17 +1,16 @@
-import React, {useRef, useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Parallax from 'parallax-js';
 
 const ParallaxScene = (props) => {
 
-    //var scene = useRef();
-
     useEffect(() => {
-        var scene = document.getElementById("scene");
-        new Parallax(scene);
+        document.querySelectorAll('._parallax_scene').forEach(scene => {
+            new Parallax(scene, props);
+        })
     });
     
     return (
-        <div id="scene" style={{width: "100%", height: "100%"}}>
+        <div class="_parallax_scene">
             {props.children}
         </div>
     );
